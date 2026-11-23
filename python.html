@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python | Portfolio Eya</title><link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script></head>
+<body><nav class="navbar">
+<a href="../index.html" class="logo">EYA<span>.</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="../index.html#formations">Modules</a></li>
+<li><a href="../digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="../developpement/python.html">Python</a></li>
+<li><a href="../systemes/systemes-exploitation.html">Systèmes</a></li>
+</ul><button id="themeToggle" aria-label="Changer le thème">🌙</button><button id="menuToggle" aria-label="Ouvrir le menu">☰</button></nav><header class="hero"><div class="hero-content"><p class="welcome">DÉVELOPPEMENT · PYTHON</p><h1>Python</h1><p>Trois mini-projets pour pratiquer les variables, les conditions, les boucles, les listes et les fonctions.</p><div class="hero-buttons"><a class="btn" href="../index.html#formations">Voir les autres modules</a><a class="btn btn-outline" href="../index.html">Accueil</a></div></div></header>
+<main class="section"><div class="content">
+<p>Cette page présente trois mini-projets d'initiation. Remplace ou complète les exemples avec tes propres versions, captures d'exécution et difficultés rencontrées.</p>
+<div class="card"><h3>Projet 1 — Calculatrice simple</h3><p><strong>Problème :</strong> effectuer une opération entre deux nombres.</p><pre>def calculatrice():
+    a = float(input("Premier nombre : "))
+    op = input("Operation (+, -, *, /) : ")
+    b = float(input("Deuxieme nombre : "))
+    if op == "+":
+        print(a + b)
+    elif op == "-":
+        print(a - b)
+    elif op == "*":
+        print(a * b)
+    elif op == "/" and b != 0:
+        print(a / b)
+    else:
+        print("Operation impossible")
+
+calculatrice()</pre><p><strong>Fonctionnement :</strong> le programme lit deux nombres et un opérateur, puis choisit le calcul avec des conditions.</p><p><strong>Difficulté à documenter :</strong> gérer la division par zéro et les opérateurs non reconnus.</p></div>
+<div class="card" style="margin-top:18px"><h3>Projet 2 — Jeu de devinettes</h3><p><strong>Problème :</strong> trouver un nombre choisi aléatoirement.</p><pre>from random import randint
+
+secret = randint(1, 20)
+reponse = 0
+while reponse != secret:
+    reponse = int(input("Devine le nombre entre 1 et 20 : "))
+    if reponse < secret:
+        print("Plus grand")
+    elif reponse > secret:
+        print("Plus petit")
+print("Bravo !")</pre><p><strong>Fonctionnement :</strong> une boucle continue jusqu'à ce que la réponse soit égale au nombre secret.</p><p><strong>Difficulté à documenter :</strong> éviter les saisies qui ne sont pas des nombres.</p></div>
+<div class="card" style="margin-top:18px"><h3>Projet 3 — Gestionnaire de notes</h3><p><strong>Problème :</strong> calculer la moyenne d'une liste de notes.</p><pre>notes = []
+n = int(input("Nombre de notes : "))
+for i in range(n):
+    note = float(input("Donner une note : "))
+    while note < 0 or note > 20:
+        note = float(input("Note invalide, recommencer : "))
+    notes.append(note)
+
+if n > 0:
+    moyenne = sum(notes) / n
+    print("Moyenne :", moyenne)</pre><p><strong>Fonctionnement :</strong> les notes sont stockées dans une liste, validées entre 0 et 20, puis leur moyenne est calculée.</p><p><strong>Difficulté à documenter :</strong> traiter le cas où le nombre de notes vaut zéro.</p></div>
+<div class="note">Pour chaque mini-projet, ajoute une capture d'écran de ton programme exécuté. Les exemples ci-dessus sont des bases à tester et à expliquer, pas des preuves d'exécution.</div>
+<div class="note"><strong>Transparence IA</strong><br>Outils utilisés : ChatGPT pour expliquer et structurer certains contenus.<br>Rôle de l'IA : proposer des explications et aider à organiser la page.<br>Travail personnel : relire, vérifier, adapter les exemples et compléter avec mes propres réalisations.<br>Sources : indiquées dans la page lorsque nécessaire.</div></div></main><footer><p>Portfolio numérique — Eya</p><p>Étudiante en Technologie Informatique | ISET Nabeul</p><a href="../index.html">Retour à l'accueil ↑</a></footer></body></html>

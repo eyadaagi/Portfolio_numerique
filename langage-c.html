@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Langage C | Portfolio Eya</title><link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script></head>
+<body><nav class="navbar">
+<a href="../index.html" class="logo">EYA<span>.</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="../index.html#formations">Modules</a></li>
+<li><a href="../digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="../developpement/python.html">Python</a></li>
+<li><a href="../systemes/systemes-exploitation.html">Systèmes</a></li>
+</ul><button id="themeToggle" aria-label="Changer le thème">🌙</button><button id="menuToggle" aria-label="Ouvrir le menu">☰</button></nav><header class="hero"><div class="hero-content"><p class="welcome">DÉVELOPPEMENT · LANGAGE C</p><h1>Langage C</h1><p>Découvrir la programmation structurée à travers les variables, conditions, boucles et tableaux.</p><div class="hero-buttons"><a class="btn" href="../index.html#formations">Voir les autres modules</a><a class="btn btn-outline" href="../index.html">Accueil</a></div></div></header>
+<main class="section"><div class="content">
+<p>Les trois programmes suivants illustrent des notions de base du langage C. Compile-les et ajoute une capture de leur exécution dans ton portfolio.</p>
+<div class="card"><h3>Programme 1 — Pair ou impair</h3><p><strong>Notions :</strong> variable, lecture, condition et opérateur modulo.</p><pre>#include &lt;stdio.h&gt;
+int main() {
+    int n;
+    printf("Donner un entier : ");
+    scanf("%d", &amp;n);
+    if (n % 2 == 0)
+        printf("Pair\n");
+    else
+        printf("Impair\n");
+    return 0;
+}</pre><p><strong>Explication :</strong> le reste de la division par 2 permet de savoir si le nombre est pair.</p></div>
+<div class="card" style="margin-top:18px"><h3>Programme 2 — Somme de 1 à N</h3><p><strong>Notions :</strong> boucle <code>for</code> et accumulateur.</p><pre>#include &lt;stdio.h&gt;
+int main() {
+    int n, i, somme = 0;
+    printf("Donner N : ");
+    scanf("%d", &amp;n);
+    for (i = 1; i &lt;= n; i++)
+        somme = somme + i;
+    printf("Somme = %d\n", somme);
+    return 0;
+}</pre><p><strong>Explication :</strong> la variable somme mémorise progressivement le total des entiers.</p></div>
+<div class="card" style="margin-top:18px"><h3>Programme 3 — Maximum d'un tableau</h3><p><strong>Notions :</strong> tableau, boucle et comparaison.</p><pre>#include &lt;stdio.h&gt;
+int main() {
+    int t[5], i, max;
+    for (i = 0; i &lt; 5; i++) {
+        printf("t[%d] = ", i);
+        scanf("%d", &amp;t[i]);
+    }
+    max = t[0];
+    for (i = 1; i &lt; 5; i++) {
+        if (t[i] &gt; max)
+            max = t[i];
+    }
+    printf("Maximum = %d\n", max);
+    return 0;
+}</pre><p><strong>Explication :</strong> on initialise le maximum avec le premier élément, puis on le met à jour si un élément plus grand est trouvé.</p></div>
+<h3 style="margin-top:25px">Comparaison Python / C</h3><table><tr><th>Critère</th><th>Python</th><th>C</th></tr><tr><td>Syntaxe</td><td>Plus concise</td><td>Plus stricte</td></tr><tr><td>Typage</td><td>Dynamiquement typé</td><td>Types déclarés</td></tr><tr><td>Mémoire</td><td>Gestion largement automatique</td><td>Contrôle plus direct</td></tr><tr><td>Exécution</td><td>Interprété (implémentation courante)</td><td>Compilé</td></tr><tr><td>Usages</td><td>Scripts, web, data, automatisation</td><td>Systèmes, embarqué, performance</td></tr></table>
+<div class="note"><strong>Transparence IA</strong><br>Outils utilisés : ChatGPT pour expliquer et structurer certains contenus.<br>Rôle de l'IA : proposer des explications et aider à organiser la page.<br>Travail personnel : relire, vérifier, adapter les exemples et compléter avec mes propres réalisations.<br>Sources : indiquées dans la page lorsque nécessaire.</div></div></main><footer><p>Portfolio numérique — Eya</p><p>Étudiante en Technologie Informatique | ISET Nabeul</p><a href="../index.html">Retour à l'accueil ↑</a></footer></body></html>

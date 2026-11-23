@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithmique | Portfolio Eya</title><link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script></head>
+<body><nav class="navbar">
+<a href="../index.html" class="logo">EYA<span>.</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="../index.html#formations">Modules</a></li>
+<li><a href="../digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="../developpement/python.html">Python</a></li>
+<li><a href="../systemes/systemes-exploitation.html">Systèmes</a></li>
+</ul><button id="themeToggle" aria-label="Changer le thème">🌙</button><button id="menuToggle" aria-label="Ouvrir le menu">☰</button></nav><header class="hero"><div class="hero-content"><p class="welcome">DÉVELOPPEMENT · ALGORITHMIQUE</p><h1>Algorithmique</h1><p>Résoudre des problèmes en organisant les étapes avant de programmer.</p><div class="hero-buttons"><a class="btn" href="../index.html#formations">Voir les autres modules</a><a class="btn btn-outline" href="../index.html">Accueil</a></div></div></header>
+<main class="section"><div class="content">
+<p>Un algorithme décrit une suite finie d'étapes permettant de résoudre un problème. Voici trois exemples en pseudo-code, avec une explication pas à pas.</p>
+<div class="card"><h3>1. Recherche du maximum</h3><p><strong>Idée :</strong> parcourir le tableau et conserver la plus grande valeur rencontrée.</p><pre>max ← T[1]
+Pour i de 2 à N faire
+    Si T[i] > max alors
+        max ← T[i]
+    FinSi
+FinPour
+Afficher max</pre><p><strong>Exemple :</strong> T = [4, 9, 2, 7]. Départ max=4 ; 9 est plus grand donc max=9 ; 2 puis 7 ne dépassent pas 9. Résultat : 9.</p></div>
+<div class="card" style="margin-top:18px"><h3>2. Recherche séquentielle</h3><p><strong>Idée :</strong> comparer la valeur recherchée à chaque élément jusqu'à la trouver ou atteindre la fin.</p><pre>i ← 1
+Tant que i ≤ N et T[i] ≠ x faire
+    i ← i + 1
+FinTantQue
+Si i ≤ N alors
+    Afficher "Trouvé à la position", i
+Sinon
+    Afficher "Absent"
+FinSi</pre><p><strong>Exemple :</strong> T=[3, 8, 5], x=8. On compare 3 puis 8 : la valeur est trouvée à la deuxième position.</p></div>
+<div class="card" style="margin-top:18px"><h3>3. Tri par sélection</h3><p><strong>Idée :</strong> chercher le plus petit élément de la partie non triée et le placer au début de cette partie.</p><pre>Pour i de 1 à N-1 faire
+    posMin ← i
+    Pour j de i+1 à N faire
+        Si T[j] < T[posMin] alors
+            posMin ← j
+        FinSi
+    FinPour
+    Echanger T[i] et T[posMin]
+FinPour</pre><p><strong>Exemple :</strong> [5, 2, 4]. Le minimum est 2, on l'échange avec 5 : [2, 5, 4]. Ensuite 4 devient le minimum restant : [2, 4, 5].</p></div>
+<div class="note">Traduction possible : reprendre ces algorithmes en Python ou en C dans tes propres fichiers, puis ajouter un organigramme et une capture d'exécution.</div>
+<div class="note"><strong>Transparence IA</strong><br>Outils utilisés : ChatGPT pour expliquer et structurer certains contenus.<br>Rôle de l'IA : proposer des explications et aider à organiser la page.<br>Travail personnel : relire, vérifier, adapter les exemples et compléter avec mes propres réalisations.<br>Sources : indiquées dans la page lorsque nécessaire.</div></div></main><footer><p>Portfolio numérique — Eya</p><p>Étudiante en Technologie Informatique | ISET Nabeul</p><a href="../index.html">Retour à l'accueil ↑</a></footer></body></html>

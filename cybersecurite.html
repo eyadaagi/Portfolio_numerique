@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersécurité | Portfolio Eya</title><link rel="stylesheet" href="../style.css"><script src="../script.js" defer></script></head>
+<body><nav class="navbar">
+<a href="../index.html" class="logo">EYA<span>.</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="../index.html#formations">Modules</a></li>
+<li><a href="../digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="../developpement/python.html">Python</a></li>
+<li><a href="../systemes/systemes-exploitation.html">Systèmes</a></li>
+</ul><button id="themeToggle" aria-label="Changer le thème">🌙</button><button id="menuToggle" aria-label="Ouvrir le menu">☰</button></nav><header class="hero"><div class="hero-content"><p class="welcome">DIGITAL SKILLS · CHAPITRE 1</p><h1>Cybersécurité</h1><p>Comprendre les menaces numériques et adopter les bons réflexes pour protéger ses comptes et ses appareils.</p><div class="hero-buttons"><a class="btn" href="../index.html#formations">Voir les autres modules</a><a class="btn btn-outline" href="../index.html">Accueil</a></div></div></header>
+<main class="section"><div class="content">
+<div class="two-col">
+<section class="card"><h3>Les logiciels malveillants</h3>
+<ul><li><strong>Virus :</strong> programme qui s'attache à un fichier et peut se propager lors de son exécution.</li>
+<li><strong>Ver :</strong> logiciel malveillant capable de se propager automatiquement entre appareils ou réseaux.</li>
+<li><strong>Cheval de Troie :</strong> programme qui semble légitime mais cache une fonction nuisible.</li>
+<li><strong>Ransomware :</strong> logiciel qui bloque l'accès aux données et réclame une rançon.</li>
+<li><strong>Spyware :</strong> logiciel qui collecte des informations à l'insu de l'utilisateur.</li></ul></section>
+<section class="card"><h3>Risques du quotidien</h3><ul><li><strong>Phishing :</strong> faux message qui imite un organisme pour pousser à révéler des informations.</li><li><strong>Arnaque :</strong> offre ou demande trompeuse visant à obtenir de l'argent ou des données.</li><li><strong>Vol de compte :</strong> accès non autorisé à un compte numérique.</li><li><strong>Fuite de données :</strong> divulgation d'informations à des personnes non autorisées.</li></ul></section></div>
+<section class="card" style="margin-top:20px"><h3>Les bonnes pratiques</h3><ul><li>Utiliser un mot de passe long et différent pour chaque compte.</li><li>Activer l'authentification à deux facteurs quand elle est disponible.</li><li>Installer les mises à jour depuis les sources officielles.</li><li>Vérifier l'adresse d'un site et l'expéditeur avant de cliquer.</li><li>Éviter les pièces jointes inattendues et les réseaux Wi-Fi publics inconnus.</li><li>Faire des sauvegardes régulières.</li></ul></section>
+<section class="card" style="margin-top:20px"><h3>Mini-quiz : suis-je bien protégé(e) ?</h3>
+<form id="cyberQuiz">
+<div class="quiz-question"><strong>1. Tu reçois un mail urgent qui demande ton mot de passe. Que fais-tu ?</strong><label><input type="radio" name="q1" value="0"> Je réponds rapidement.</label><label><input type="radio" name="q1" value="1"> Je ne donne rien et je vérifie par un canal officiel.</label></div>
+<div class="quiz-question"><strong>2. Quelle pratique protège mieux tes comptes ?</strong><label><input type="radio" name="q2" value="1"> Un mot de passe différent et la double authentification.</label><label><input type="radio" name="q2" value="0"> Le même mot de passe partout.</label></div>
+<div class="quiz-question"><strong>3. D'où télécharger une mise à jour ?</strong><label><input type="radio" name="q3" value="1"> Depuis les paramètres ou le site officiel.</label><label><input type="radio" name="q3" value="0"> Depuis un lien inconnu reçu par message.</label></div>
+<button class="btn" type="button" onclick="checkCyber()">Vérifier mes réponses</button><p id="quizResult" class="result" aria-live="polite"></p></form></section>
+<p><strong>Sources :</strong> <a href="https://cyber.gouv.fr/securisation/10-regles-or-securite-numerique/" target="_blank" rel="noopener">ANSSI – 10 règles d'or</a> · <a href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a></p>
+<script>function checkCyber(){let score=0;for(let i=1;i<=3;i++){let a=document.querySelector('input[name="q'+i+'"]:checked');if(a)score+=Number(a.value);}document.getElementById("quizResult").textContent="Ton score : "+score+"/3. "+(score===3?"Bravo, tu as les bons réflexes !":"Relis les bonnes pratiques et réessaie.");}</script>
+<div class="note"><strong>Transparence IA</strong><br>Outils utilisés : ChatGPT pour expliquer et structurer certains contenus.<br>Rôle de l'IA : proposer des explications et aider à organiser la page.<br>Travail personnel : relire, vérifier, adapter les exemples et compléter avec mes propres réalisations.<br>Sources : indiquées dans la page lorsque nécessaire.</div></div></main><footer><p>Portfolio numérique — Eya</p><p>Étudiante en Technologie Informatique | ISET Nabeul</p><a href="../index.html">Retour à l'accueil ↑</a></footer></body></html>
